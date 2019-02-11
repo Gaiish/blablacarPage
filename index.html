@@ -10,19 +10,81 @@
         margin: 0;
       }
       header{
-        background-image: url('bg.jpg');
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('bg.jpg');
+        //background-color: ;
         background-size: cover;
         height: 90vh;
+      }
+      nav{
+        background-color: #FFF;
+        padding: 16px 180px 16px 180px;
+      }
+      #navright{
+        float: right;
+      }
+      #navright li{
+        list-style: none;
+        display: inline;
+        padding: 0 10px 0 18px;
+      }
+      #navright li a{
+        text-decoration: none;
+        color: #2EBDFF;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      #main{
+        position: absolute;
+        top: 50%;
+        color: #FFF;
+      }
+      #main h1, p {
+        margin-left: 400px;
+      }
+      #main h1{
+        font-size: 60px;
+      }
+      #main p {
+        font-size: 30px;
+        text-align: center;
+      }
+      #in {
+        padding-left: 50%;
+      }
+      #in button
+      {
+        background-color: #2EBDFF;
+        color: #FFF;
+        padding: 10px 45px 10px 45px;
+        border-radius: 20px;
+        border-style:none;
+        font-size: 20px;
+      }
+      #in button:hover{
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <header>
       <nav>
-
+        <img src='navlogo.png' width='160px' />
+        <ul id='navright'>
+          <li><a href='#'>Assurer mon vehicule</a></li>
+          <li><a href='#'>Rechercher</a></li>
+          <li><a href='#'>Proposer un trajet</a></li>
+          <li><a href='#'>Inscription</a></li>
+          <li><a href='#'>Connexion</a></li>
+        </ul>
       </nav>
-      <div>
-
+      <div id='main'>
+        <div>
+          <h1>Et vous, qui allez-vous retrouver ?</h1>
+          <p>Le covoiturage simplifie vos trajets<p>
+        </div>
+        <div id='in'>
+          <button>Chercher un trajet</button>
+        </div>
       </div>
     </header>
   </body>
